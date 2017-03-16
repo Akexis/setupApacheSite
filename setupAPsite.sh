@@ -29,7 +29,7 @@ echo 'Setting up VirtualHost in /etc/apache2/extra/httpd-vhosts.conf'
 cat << EOF >> /etc/apache2/extra/httpd-vhosts.conf
 
 <VirtualHost *:80>
-    ServerAdmin aabbott@godigitalmarketing.com
+    ServerAdmin email@development.com
     DocumentRoot "/Users/aabbott/Sites/$repo"
     ServerName $repo.dev
     ServerAlias www.$repo.dev
