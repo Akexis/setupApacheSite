@@ -3,7 +3,8 @@
 This file when placed in the user bin folder on a linux machine runs through the various steps of setting up a site on a local LAMP install.
 
 Terminal command:
-```sudo setupAPsite.sh
+```
+sudo setupAPsite.sh
 ```
 
 ## Who Can Use This File?
