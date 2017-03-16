@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Section 1 - Create new repository/site folder
+
 echo ''
 echo 'Creating a site:'
 echo '--------------------------'
@@ -18,6 +20,8 @@ elif [ "$folderYesNo" = "n" ]; then
 else
 	echo "Sorry, don't understand, you'll have to create it later."
 fi
+
+# Section 2 - Create virtual host entry
 
 echo ''
 echo 'Setting up VirtualHost in /etc/apache2/extra/httpd-vhosts.conf'
@@ -45,6 +49,8 @@ echo 'Restarting server.'
 
 sudo apachectl restart
 
+# Section 3 - Spoof hosts for localhost redirect
+
 echo ''
 echo 'Adding spoofed domain.'
 echo -e "\r127.0.0.1\t$repo.dev" >> /etc/hosts
@@ -59,6 +65,7 @@ elif [ "$dbYesNo" = "n" ]; then
 else
 	echo "Sorry, don't understand, you'll have to create it later."
 fi
+# Section 4 - Install WordPress using WPCLI
 
 echo ''
 echo 'Do you need to install WordPress?[y/n]'
@@ -75,6 +82,8 @@ else
 	echo "Sorry, don't understand, you'll have to install it later."
 	echo "You can do so using: wp core install"
 fi
+
+# Section 5 - File permission shortcuts
 
 echo ''
 echo "Fix file permissions: sudo chmod -R 755 $repo"
