@@ -55,6 +55,8 @@ echo ''
 echo 'Adding spoofed domain.'
 echo -e "\r127.0.0.1\t$repo.dev" >> /etc/hosts
 
+# Section 4 - Create database
+
 echo ''
 echo 'Do you need to setup a database?[y/n]'
 read dbYesNo
@@ -65,7 +67,7 @@ elif [ "$dbYesNo" = "n" ]; then
 else
 	echo "Sorry, don't understand, you'll have to create it later."
 fi
-# Section 4 - Install WordPress using WPCLI
+# Section 5 - Install WordPress using WPCLI
 
 echo ''
 echo 'Do you need to install WordPress?[y/n]'
@@ -83,7 +85,7 @@ else
 	echo "You can do so using: wp core install"
 fi
 
-# Section 5 - File permission shortcuts
+# Section 6 - File permission shortcuts
 
 echo ''
 echo "Fix file permissions: sudo chmod -R 755 $repo"
