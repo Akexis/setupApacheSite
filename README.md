@@ -18,7 +18,7 @@ This file assumes you have a fair understanding of a Linux system and can naviga
 * Section 3 - Spoof hosts for localhost redirect
 * Section 4 - Create database
 * Section 5 - Install WordPress using WPCLI
-* Section 6 - Section 5 - File permission shortcuts
+* Section 6 - File permission shortcuts
 
 ### Section 1 - Create new repository/site folder
 
@@ -97,6 +97,6 @@ wp core install --url=$repo.dev --title=$repo --admin_user=admin --admin_passwor
 
 You'll also need to add the appropriate email. This email will be the admin email for WordPress access. This also gives a password of pass - so this will also need to be changed, especially for production.
 
-### Section 6 - Section 5 - File permission shortcuts
+### Section 6 - File permission shortcuts
 
 This last section just gives reference in case permissions need to be modified, because I'm a fan of copy and paste. Remember to change paths to wherever you have your site development setup.
