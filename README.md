@@ -11,7 +11,7 @@ If you want to name it something else, go ahead, just call the file name in shor
 
 ## Who Can Use This File?
 
-This file assumes you have a fair understanding of a Linux system and can navigate well enough in Terminal to make manual adjustments to appropriate files.
+This file assumes you have a fair understanding of a Linux system and can navigate well enough in Terminal to make manual adjustments to appropriate files. It also assumes you've already created a LAMP environment.
 
 * Section 1 - Create new repository/site folder
 * Section 2 - Create virtual host entry
