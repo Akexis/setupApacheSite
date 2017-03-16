@@ -76,7 +76,7 @@ if [ "$wordYesNo" = "y" ]; then
 	cd /Users/aabbott/Sites/$repo
 	wp core download --allow-root
 	wp core config --dbname=dev_$repo --dbuser=root --dbpass=pass123 --allow-root
-	wp core install --url=$repo.dev --title=$repo --admin_user=admin --admin_password=pass --admin_email=aabbott@godigitalmarketing.com --skip-email --allow-root
+	wp core install --url=$repo.dev --title=$repo --admin_user=admin --admin_password=pass --admin_email=email@development.com --skip-email --allow-root
 	chmod -R 755 $repo
 elif [ "$wordYesNo" = "n" ]; then
 	echo 'No WordPress install, moving on.'
